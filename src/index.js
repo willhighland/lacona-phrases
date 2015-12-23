@@ -6,12 +6,6 @@ export class Application extends Phrase {
   }
 }
 
-export class File extends Phrase {
-  describe () {
-    return null
-  }
-}
-
 export class PreferencePane extends Phrase {
   describe () {
     return null
@@ -24,13 +18,7 @@ export class RunningApplication extends Phrase {
   }
 }
 
-export class OpenWindow extends Phrase {
-  describe () {
-    return null
-  }
-}
-
-export class BrowserTab extends Phrase {
+export class ContentArea extends Phrase {
   describe () {
     return null
   }

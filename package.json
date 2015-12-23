@@ -3,7 +3,7 @@
     "name": "@brandonhorst"
   },
   "bugs": {
-    "url": "https://github.com/brandonhorst/lacona-phrase-system/issues"
+    "url": "https://github.com/lacona/lacona-phrase-system/issues"
   },
   "dependencies": {
     "lacona-phrase": "^0.9.1"
@@ -13,7 +13,7 @@
     "babel": "^5.8.34",
     "rimraf": "^2.4.5"
   },
-  "homepage": "https://github.com/brandonhorst/lacona-phrase-system",
+  "homepage": "https://github.com/lacona/lacona-phrase-system",
   "keywords": [
     "app",
     "application",
@@ -24,15 +24,12 @@
   "name": "lacona-phrase-system",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brandonhorst/lacona-phrase-system.git"
+    "url": "git+https://github.com/lacona/lacona-phrase-system.git"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
-    "clean": "rimraf lib tmp",
-    "prepublish": "npm run build",
-    "pretest": "babel test --out-dir tmp",
-    "test": "mocha tmp",
-    "validate": "npm run build && npm test"
+    "clean": "rimraf lib",
+    "prepublish": "npm run build"
   },
   "version": "0.0.2"
 }
