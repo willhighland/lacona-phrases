@@ -17,10 +17,11 @@ The Results of these phrases work a bit differently than most. Rather than retur
 ```js
 /** @jsx createElement */
 import { createElement, Phrase } from 'lacona-phrase'
-import { Application as SystemApplication } 'lacona-phrase-system'
+import { Application as SystemApplication } from 'lacona-phrase-system'
 
 class ApplicationObject {
-  constructor (path) {
+  constructor (name, path) {
+    this.name = name
     this.path = path
   }
 
@@ -41,9 +42,9 @@ export class OSXApp extends Phrase {
   describe () {
     return (
       <choice>
-        <literal text='Calendar' value={new ApplicationObject('/Applications/Calendar.app')} />
-        <literal text='Reminders' value={new ApplicationObject('/Applications/Reminders.app')} />
-        <literal text='Mail' value={new ApplicationObject('/Applications/Mail.app')} />
+        <literal text='Calendar' value={new ApplicationObject('Calendar', '/Applications/Calendar.app')} />
+        <literal text='Reminders' value={new ApplicationObject('Reminders', '/Applications/Reminders.app')} />
+        <literal text='Mail' value={new ApplicationObject('Mail', '/Applications/Mail.app')} />
       </choice>
     )
   }
