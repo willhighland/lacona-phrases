@@ -170,7 +170,7 @@ Represents a "Content Area" that is currently open on the system. This could ref
 
 Represents a drive or volume currently mounted to the system (virtual drives, optical media, mounted network drives, etc.)
 
-### Resul
+### Result
 ```js
 {
   name: `String` - the name of the mounted volume, for logging
@@ -180,6 +180,7 @@ Represents a drive or volume currently mounted to the system (virtual drives, op
 
 `prototype` can contain (all are optional):
 
-- `open()` - if the drive has a default action, perform it. Otherwise, open the drive in the file browser.
-- `explore()` - open the drive in the file browser
-- `unmount()` - unmount or eject the drive
+- `canOpen()`: `Boolean` - can the drive be opened in the file browser
+- `open()` - open the drive in the file browser.
+- `canEject()`: `Boolean` - can the drive be unmounted or ejected
+- `eject()` - unmount or eject the drive
