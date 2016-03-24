@@ -3,18 +3,12 @@
     "name": "@brandonhorst"
   },
   "bugs": {
-    "url": "https://github.com/lacona/lacona-phrase-system/issues"
+    "url": "https://github.com/laconalabs/lacona-phrases/issues"
   },
-  "dependencies": {
-    "lacona-phrase": "^0.9.1"
-  },
-  "description": "Lacona Phrases for system state(Apps, files, open windows, and so forth). Designed to be extended",
-  "devDependencies": {
-    "babel": "^5.8.34",
-    "lacona": "^0.35.0",
-    "rimraf": "^2.4.5"
-  },
-  "homepage": "https://github.com/lacona/lacona-phrase-system",
+  "dependencies": {},
+  "description": "Lacona Phrases designed to be extended",
+  "devDependencies": {},
+  "homepage": "https://github.com/laconalabs/lacona-phrases",
   "keywords": [
     "app",
     "application",
@@ -22,15 +16,11 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "name": "lacona-phrase-system",
+  "name": "lacona-phrases",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lacona/lacona-phrase-system.git"
+    "url": "git+https://github.com/laconalabs/lacona-phrases.git"
   },
-  "scripts": {
-    "build": "babel src --out-dir lib",
-    "clean": "rimraf lib",
-    "prepublish": "npm run build"
-  },
-  "version": "0.1.0"
+  "scripts": {},
+  "version": "0.0.1"
 }
