@@ -15,7 +15,7 @@
     "lacona"
   ],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "index.js",
   "name": "lacona-phrases",
   "repository": {
     "type": "git",
