@@ -8,5 +8,6 @@ module.exports = {
   RunningApplication: {describe: describe},
   ContentArea: {describe: describe},
   MountedVolume: {describe: describe},
-  File: {describe: describe}
+  File: {describe: describe},
+  ContactCard: {describe: describe}
 }
