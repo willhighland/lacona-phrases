@@ -94,5 +94,13 @@ module.exports = {
   DateDuration: {
     id: 'lacona-phrases:DateDuration',
     describe: describe
+  },
+  Command: {
+    id: 'lacona-phrases:Command',
+    describe: describe
+  },
+  BooleanSetting: {
+    id: 'lacona-phrases: BooleanSetting',
+    describe: describe
   }
 }
