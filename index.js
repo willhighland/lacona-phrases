@@ -97,7 +97,10 @@ module.exports = {
   },
   Command: {
     id: 'lacona-phrases:Command',
-    describe: describe
+    describe: describe,
+    mapResult: function mapResult (result, element) {
+      return {result: result, element: element}
+    }
   },
   BooleanSetting: {
     id: 'lacona-phrases: BooleanSetting',
