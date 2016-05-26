@@ -1,8 +1,27 @@
+const email = require('elliptical-email')
+const phone = require('elliptical-phone')
+const url = require('elliptical-url')
+const datetime = require('elliptical-datetime')
+const number = require('elliptical-number')
+const string = require('elliptical-string')
+
 function describe () {
   return null
 }
 
 module.exports = {
+  Command: {
+    id: 'lacona-phrases:Command',
+    describe: describe,
+    mapResult: function mapResult (result, element) {
+      return {result: result, element: element}
+    }
+  },
+  BooleanSetting: {
+    id: 'lacona-phrases: BooleanSetting',
+    describe: describe
+  },
+
   Application: {
     id: 'lacona-phrases:Application',
     describe: describe
@@ -31,79 +50,20 @@ module.exports = {
     id: 'lacona-phrases:ContactCard',
     describe: describe
   },
-  EmailAddress: {
-    id: 'lacona-phrases:EmailAddress',
-    describe: describe
-  },
-  PhoneNumber: {
-    id: 'lacona-phrases:PhoneNumber',
-    describe: describe
-  },
-  URL: {
-    id: 'lacona-phrases:URL',
-    describe: describe
-  },
-  Integer: {
-    id: 'lacona-phrases:Integer',
-    describe: describe
-  },
-  Decimal: {
-    id: 'lacona-phrases:Decimal',
-    describe: describe
-  },
-  Ordinal: {
-    id: 'lacona-phrases:Ordinal',
-    describe: describe
-  },
-  DigitString: {
-    id: 'lacona-phrases:DigitString',
-    describe: describe
-  },
-  String: {
-    id: 'lacona-phrases:String',
-    describe: describe
-  },
-  DateTime: {
-    id: 'lacona-phrases:DateTime',
-    describe: describe
-  },
-  Date: {
-    id: 'lacona-phrases:Date',
-    describe: describe
-  },
-  Time: {
-    id: 'lacona-phrases:Time',
-    describe: describe
-  },
-  Range: {
-    id: 'lacona-phrases:Range',
-    describe: describe
-  },
-  Day: {
-    id: 'lacona-phrases:Day',
-    describe: describe
-  },
-  Duration: {
-    id: 'lacona-phrases:Duration',
-    describe: describe
-  },
-  TimeDuration: {
-    id: 'lacona-phrases:TimeDuration',
-    describe: describe
-  },
-  DateDuration: {
-    id: 'lacona-phrases:DateDuration',
-    describe: describe
-  },
-  Command: {
-    id: 'lacona-phrases:Command',
-    describe: describe,
-    mapResult: function mapResult (result, element) {
-      return {result: result, element: element}
-    }
-  },
-  BooleanSetting: {
-    id: 'lacona-phrases: BooleanSetting',
-    describe: describe
-  }
+  EmailAddress: email.EmailAddress,
+  PhoneNumber: phone.PhoneNumber,
+  URL: url.URL,
+  Integer: number.Integer,
+  Decimal: number.Decimal,
+  Ordinal: number.Ordinal,
+  DigitString: number.DigitString,
+  String: string.String,
+  DateTime: datetime.DateTime,
+  Date: datetime.Date,
+  Time: datetime.Time,
+  Range: datetime.Range,
+  Day: datetime.Day,
+  Duration: datetime.Duration,
+  TimeDuration: datetime.TimeDuration,
+  DateDuration: datetime.DateDuration
 }

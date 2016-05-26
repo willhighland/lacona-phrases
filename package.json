@@ -5,7 +5,14 @@
   "bugs": {
     "url": "https://github.com/laconalabs/lacona-phrases/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "elliptical-datetime": "^1.0.0-rc3",
+    "elliptical-email": "^1.0.0-rc2",
+    "elliptical-number": "^1.0.0-rc2",
+    "elliptical-phone": "^1.0.0-rc2",
+    "elliptical-string": "^1.0.0-rc2",
+    "elliptical-url": "^1.0.0-rc2"
+  },
   "description": "Lacona Phrases designed to be extended",
   "devDependencies": {},
   "homepage": "https://github.com/laconalabs/lacona-phrases",
