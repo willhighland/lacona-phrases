@@ -158,6 +158,24 @@ Represents a viewable contact card on the system
 }
 ```
 
+### `File`
+
+Represents a file on the local file system
+
+### Result
+```
+string
+```
+
+### `Directory`
+
+Represents a directory on the local file system
+
+### Result
+```
+string
+```
+
 ### `EmailAddress`
 
 #### Result
