@@ -46,6 +46,10 @@ module.exports = {
     id: 'lacona-phrases:File',
     describe: describe
   },
+  Directory: {
+    id: 'lacona-phrases:Directory',
+    describe: describe
+  },
   ContactCard: {
     id: 'lacona-phrases:ContactCard',
     describe: describe
