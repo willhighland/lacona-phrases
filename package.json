@@ -6,12 +6,12 @@
     "url": "https://github.com/laconalabs/lacona-phrases/issues"
   },
   "dependencies": {
-    "elliptical-datetime": "^1.0.0-rc3",
-    "elliptical-email": "^1.0.0-rc2",
-    "elliptical-number": "^1.0.0-rc2",
-    "elliptical-phone": "^1.0.0-rc2",
-    "elliptical-string": "^1.0.0-rc2",
-    "elliptical-url": "^1.0.0-rc2"
+    "elliptical-datetime": "^1.0.0-rc6",
+    "elliptical-email": "^1.0.0-rc3",
+    "elliptical-number": "^1.0.0-rc3",
+    "elliptical-phone": "^1.0.0-rc3",
+    "elliptical-string": "^1.0.0-rc3",
+    "elliptical-url": "^1.0.0-rc3"
   },
   "description": "Lacona Phrases designed to be extended",
   "devDependencies": {},
