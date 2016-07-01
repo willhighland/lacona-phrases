@@ -54,6 +54,10 @@ module.exports = {
     id: 'lacona-phrases:ContactCard',
     describe: describe
   },
+  DictionaryWord: {
+    id: 'lacona-phrases:DictionaryWord',
+    describe: describe
+  },
   EmailAddress: email.EmailAddress,
   PhoneNumber: phone.PhoneNumber,
   URL: url.URL,
