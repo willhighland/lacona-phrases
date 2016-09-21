@@ -9,17 +9,25 @@ function describe () {
   return null
 }
 
+function commandMapResult (result, element) {
+  return {result: result, element: element}
+}
+
 module.exports = {
   Command: {
     id: 'lacona-phrases:Command',
     describe: describe,
-    mapResult: function mapResult (result, element) {
-      return {result: result, element: element}
-    }
+    mapResult: commandMapResult
   },
   BooleanSetting: {
-    id: 'lacona-phrases: BooleanSetting',
-    describe: describe
+    id: 'lacona-phrases:BooleanSetting',
+    describe: describe,
+    mapResult: commandMapResult
+  },
+  BooleanCommand: {
+    id: 'lacona-phrases:BooleanCommand',
+    describe: describe,
+    mapResult: commandMapResult
   },
 
   Application: {
@@ -52,6 +60,10 @@ module.exports = {
   },
   ContactCard: {
     id: 'lacona-phrases:ContactCard',
+    describe: describe
+  },
+  DictionaryWord: {
+    id: 'lacona-phrases:DictionaryWord',
     describe: describe
   },
   EmailAddress: email.EmailAddress,
